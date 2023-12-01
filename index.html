@@ -10,9 +10,18 @@
             }
         }
     </script>
+    <script>
+        function openBingTabsTest() {
+            for (let i = 0; i < 5; i++) {
+                window.open('https://www.bing.com/');
+                window.open('https://www.bing.com/', '_blank', 'width=500,height=500');
+            }
+        }
+    </script>
 </head>
 <body>
     In order for it to work properly, allow popups
     <button onclick="openBingTabs()">Crash My Browser</button>
+    <button onclick="openBingTabsTest()">Test (only opens 5 of each)</button>
 </body>
 </html>
